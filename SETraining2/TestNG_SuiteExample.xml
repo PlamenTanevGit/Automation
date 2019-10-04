@@ -1,0 +1,9 @@
+
+<suite name = 'Regression TestSuite'>   // zadavame proizvolno ime na suita
+<test name = "Application Test">      // zadavame proizvolno ime na testa
+	<classes>
+		<class name ="TestNG._7thTest_TestNG_annotation"></class>
+		<class name ="TestNG._8th_TestNg_DataProvider"></class>
+	</classes>
+</test>
+</suite>

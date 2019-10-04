@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sec_31_Parameters_and_Paralel]">
+  <test thread-count="5" name="Test 1(failed)">
+    <parameter name="Username" value="test@email.com"/>
+    <parameter name="Password" value="12345"/>
+    <classes>
+      <class name="POM.Test1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- POM.Test1 -->
+    </classes>
+  </test> <!-- Test 1(failed) -->
+  <test thread-count="5" name="Test 2(failed)">
+    <parameter name="Username" value="test2@email.com"/>
+    <parameter name="Password" value="12345"/>
+    <classes>
+      <class name="POM.Test1">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- POM.Test1 -->
+    </classes>
+  </test> <!-- Test 2(failed) -->
+</suite> <!-- Failed suite [Sec_31_Parameters_and_Paralel] -->
