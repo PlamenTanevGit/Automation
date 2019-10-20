@@ -44,10 +44,7 @@ public class _9th_TestNg_DataProvider2 {
 		// 2. Open the page:
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver.get(URL);
-		//3. Define Web Elements method
-		defieneWebElements();
-		//4. page title verify
-		pageTitleVerify("SDET Training | Account Management");
+
 	}
 	
 	

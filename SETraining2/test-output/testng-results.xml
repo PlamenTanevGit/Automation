@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Login tests" duration-ms="52392" started-at="2019-10-04T08:56:12Z" finished-at="2019-10-04T08:57:04Z">
+  <suite name="Login tests" duration-ms="57481" started-at="2019-10-19T17:26:05Z" finished-at="2019-10-19T17:27:03Z">
     <groups>
     </groups>
-    <test name="Test1-success login" duration-ms="19281" started-at="2019-10-04T08:56:12Z" finished-at="2019-10-04T08:56:31Z">
-      <class name="TestNG._99th_TestNg_XML_dataParsing">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1a1d6a08]" name="setUp" is-config="true" duration-ms="12634" started-at="2019-10-04T08:56:12Z" finished-at="2019-10-04T08:56:24Z">
+    <test name="Test1-success login" duration-ms="17707" started-at="2019-10-19T17:26:05Z" finished-at="2019-10-19T17:26:23Z">
+      <class name="tPOM_tests.Test1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tPOM_tests.Test1@6f195bc3]" name="setUp" is-config="true" duration-ms="11862" started-at="2019-10-19T17:26:05Z" finished-at="2019-10-19T17:26:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1a1d6a08]" name="loginTest" duration-ms="6093" started-at="2019-10-04T08:56:24Z" finished-at="2019-10-04T08:56:30Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tPOM_tests.Test1@6f195bc3]" name="beforeMethod" is-config="true" duration-ms="2151" started-at="2019-10-19T17:26:17Z" finished-at="2019-10-19T17:26:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessLogin(java.lang.String, java.lang.String)[pri:0, instance:tPOM_tests.Test1@6f195bc3]" name="testSuccessLogin" duration-ms="2218" started-at="2019-10-19T17:26:19Z" finished-at="2019-10-19T17:26:22Z">
           <params>
             <param index="0">
               <value>
@@ -24,88 +28,33 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: '2210-BGR', ip: '192.168.130.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f466516de88ff32f9bf062c88fde08b8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: '2210-BGR', ip: '192.168.130.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f466516de88ff32f9bf062c88fde08b8
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-at TestNG._99th_TestNg_XML_dataParsing.verifyEqualTexts(_99th_TestNg_XML_dataParsing.java:117)
-at TestNG._99th_TestNg_XML_dataParsing.loginTest(_99th_TestNg_XML_dataParsing.java:67)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1a1d6a08]" name="afterMethod" is-config="true" duration-ms="394" started-at="2019-10-04T08:56:30Z" finished-at="2019-10-04T08:56:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1a1d6a08]" name="tearDown" is-config="true" duration-ms="141" started-at="2019-10-04T08:56:31Z" finished-at="2019-10-04T08:56:31Z">
+        </test-method> <!-- testSuccessLogin -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:tPOM_tests.Test1@6f195bc3]" name="tearDown" is-config="true" duration-ms="1448" started-at="2019-10-19T17:26:22Z" finished-at="2019-10-19T17:26:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tPOM_tests.Test1.testSuccessLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestNG._99th_TestNg_XML_dataParsing -->
+      </class> <!-- tPOM_tests.Test1 -->
     </test> <!-- Test1-success login -->
-    <test name="Test2-success login" duration-ms="18584" started-at="2019-10-04T08:56:31Z" finished-at="2019-10-04T08:56:49Z">
-      <class name="TestNG._99th_TestNg_XML_dataParsing">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@12f41634]" name="setUp" is-config="true" duration-ms="11813" started-at="2019-10-04T08:56:31Z" finished-at="2019-10-04T08:56:43Z">
+    <test name="Test2-success login" duration-ms="14847" started-at="2019-10-19T17:26:23Z" finished-at="2019-10-19T17:26:38Z">
+      <class name="tPOM_tests.Test1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tPOM_tests.Test1@5bfbf16f]" name="setUp" is-config="true" duration-ms="9685" started-at="2019-10-19T17:26:23Z" finished-at="2019-10-19T17:26:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@12f41634]" name="loginTest" duration-ms="6297" started-at="2019-10-04T08:56:43Z" finished-at="2019-10-04T08:56:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tPOM_tests.Test1@5bfbf16f]" name="beforeMethod" is-config="true" duration-ms="2134" started-at="2019-10-19T17:26:33Z" finished-at="2019-10-19T17:26:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSuccessLogin(java.lang.String, java.lang.String)[pri:0, instance:tPOM_tests.Test1@5bfbf16f]" name="testSuccessLogin" duration-ms="1672" started-at="2019-10-19T17:26:35Z" finished-at="2019-10-19T17:26:37Z">
           <params>
             <param index="0">
               <value>
@@ -118,26 +67,65 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessLogin -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:tPOM_tests.Test1@5bfbf16f]" name="tearDown" is-config="true" duration-ms="1353" started-at="2019-10-19T17:26:37Z" finished-at="2019-10-19T17:26:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tPOM_tests.Test1.testSuccessLogin(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tPOM_tests.Test1 -->
+    </test> <!-- Test2-success login -->
+    <test name="Test3- Unsuccess login" duration-ms="24892" started-at="2019-10-19T17:26:38Z" finished-at="2019-10-19T17:27:03Z">
+      <class name="tPOM_tests.Test1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tPOM_tests.Test1@4923ab24]" name="setUp" is-config="true" duration-ms="9737" started-at="2019-10-19T17:26:38Z" finished-at="2019-10-19T17:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tPOM_tests.Test1@4923ab24]" name="beforeMethod" is-config="true" duration-ms="2115" started-at="2019-10-19T17:26:48Z" finished-at="2019-10-19T17:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testSuccessLogin(java.lang.String, java.lang.String)[pri:0, instance:tPOM_tests.Test1@4923ab24]" name="testSuccessLogin" duration-ms="11631" started-at="2019-10-19T17:26:50Z" finished-at="2019-10-19T17:27:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test22@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123245]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=77.0.3865.90)
+  (Session info: chrome=77.0.3865.120)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: '2210-BGR', ip: '192.168.130.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: '2210-BGR', ip: '192.168.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 17974fbdd136719773a6dadeec2c2264]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fd8e1ed92a05e9a9a1a480a9f41b467]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=77.0.3865.90)
+  (Session info: chrome=77.0.3865.120)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: '2210-BGR', ip: '192.168.130.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: '2210-BGR', ip: '192.168.0.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 17974fbdd136719773a6dadeec2c2264
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fd8e1ed92a05e9a9a1a480a9f41b467
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -150,8 +138,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-at TestNG._99th_TestNg_XML_dataParsing.verifyEqualTexts(_99th_TestNg_XML_dataParsing.java:117)
-at TestNG._99th_TestNg_XML_dataParsing.loginTest(_99th_TestNg_XML_dataParsing.java:67)
+at Utilities.Utils.verifyEqualTexts(Utils.java:46)
+at tPOM_tests.Test1.testSuccessLogin(Test1.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -182,48 +170,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@12f41634]" name="afterMethod" is-config="true" duration-ms="353" started-at="2019-10-04T08:56:49Z" finished-at="2019-10-04T08:56:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@12f41634]" name="tearDown" is-config="true" duration-ms="112" started-at="2019-10-04T08:56:49Z" finished-at="2019-10-04T08:56:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestNG._99th_TestNg_XML_dataParsing -->
-    </test> <!-- Test2-success login -->
-    <test name="Test3- Unsuccess login" duration-ms="14403" started-at="2019-10-04T08:56:50Z" finished-at="2019-10-04T08:57:04Z">
-      <class name="TestNG._99th_TestNg_XML_dataParsing">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1e7c7811]" name="setUp" is-config="true" duration-ms="11813" started-at="2019-10-04T08:56:50Z" finished-at="2019-10-04T08:57:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1e7c7811]" name="loginTest" duration-ms="2116" started-at="2019-10-04T08:57:01Z" finished-at="2019-10-04T08:57:03Z">
+        </test-method> <!-- testSuccessLogin -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:tPOM_tests.Test1@4923ab24]" name="tearDown" is-config="true" duration-ms="1402" started-at="2019-10-19T17:27:01Z" finished-at="2019-10-19T17:27:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test22@email.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123245]]>
+                <![CDATA[public void tPOM_tests.Test1.testSuccessLogin(java.lang.String,java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1e7c7811]" name="afterMethod" is-config="true" duration-ms="372" started-at="2019-10-04T08:57:03Z" finished-at="2019-10-04T08:57:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNG._99th_TestNg_XML_dataParsing@1e7c7811]" name="tearDown" is-config="true" duration-ms="95" started-at="2019-10-04T08:57:04Z" finished-at="2019-10-04T08:57:04Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestNG._99th_TestNg_XML_dataParsing -->
+      </class> <!-- tPOM_tests.Test1 -->
     </test> <!-- Test3- Unsuccess login -->
   </suite> <!-- Login tests -->
 </testng-results>

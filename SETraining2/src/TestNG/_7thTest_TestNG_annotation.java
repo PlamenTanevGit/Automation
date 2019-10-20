@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class _7thTest_TestNG_annotation {
+	
 	@Test (testName="Test1))")
 	public void test1() {
 		System.out.println("Test1");
@@ -32,6 +33,15 @@ public class _7thTest_TestNG_annotation {
 	@Test(groups={"myGroup"})
 	public void test4(){
 		System.out.println("Test4 withing group");
+	}
+	@Test (priority = 0)
+	public void test5 () {
+		System.out.println("test5");
+	}
+	
+	@Test (alwaysRun=true, dependsOnMethods = {"test1"})
+	public void test6 () {
+		System.out.println("test6");
 	}
 
 	@BeforeMethod

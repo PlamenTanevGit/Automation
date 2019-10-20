@@ -41,13 +41,9 @@ public class _8th_TestNg_DataProvider {
 		// 1 Define the WebDriver and Define WebElements;
 		driver = Utilities.DriverFactory.open("firefox");
 		// 2. Open the page:
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get(URL);
-		//3. Define Web Elements method
-		defieneWebElements();
-		//4. page title verify
-		pageTitleVerify("SDET Training | Account Management");
-	}
+		}
 	
 	
 	/*
@@ -60,6 +56,7 @@ public class _8th_TestNg_DataProvider {
 				{ "Shawn Thompson", "sw@testemail.com", "sw2password"}, 
 				{ "Michael Lane", "ml@testemail.com", "ml3password"}, 
 				{ "Janelle Von", "jv@testemail.com", "jv4password"}, 
+				{ "Janelle Von", "jv@testemail.com", "jv4password"}, 
 
 		};
 		
@@ -67,7 +64,9 @@ public class _8th_TestNg_DataProvider {
 		
 	}
 	
-	
+	/*
+	 * Negative Data test
+	 */
 	@Test(dataProvider = "testData") 
 	public void loginTest(String name, String email, String password) {
 		driver.get(URL);
@@ -107,7 +106,12 @@ public class _8th_TestNg_DataProvider {
 	
 	@AfterTest
 	public void tearDown() {
-		
+		try {
+			takeScreenshot(driver, "loginTest");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		driver.close();
 	}
 	

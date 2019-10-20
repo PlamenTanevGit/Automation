@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Login tests]">
-  <test thread-count="5" name="Test1-success login(failed)">
-    <parameter name="Username" value="test@email.com"/>
-    <parameter name="Password" value="12345"/>
+  <test thread-count="5" name="Test3- Unsuccess login(failed)">
+    <parameter name="Username" value="test22@email.com"/>
+    <parameter name="Password" value="123245"/>
     <classes>
-      <class name="TestNG._99th_TestNg_XML_dataParsing">
+      <class name="tPOM_tests.Test1">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="0"/>
+          <include name="testSuccessLogin" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
           <include name="setUp"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- TestNG._99th_TestNg_XML_dataParsing -->
-    </classes>
-  </test> <!-- Test1-success login(failed) -->
-  <test thread-count="5" name="Test2-success login(failed)">
-    <parameter name="Username" value="test2@email.com"/>
-    <parameter name="Password" value="12345"/>
-    <classes>
-      <class name="TestNG._99th_TestNg_XML_dataParsing">
-        <methods>
           <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- TestNG._99th_TestNg_XML_dataParsing -->
+      </class> <!-- tPOM_tests.Test1 -->
     </classes>
-  </test> <!-- Test2-success login(failed) -->
+  </test> <!-- Test3- Unsuccess login(failed) -->
 </suite> <!-- Failed suite [Login tests] -->

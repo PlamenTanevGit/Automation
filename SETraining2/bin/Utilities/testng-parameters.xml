@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login tests">
+	<test name="Test1-success login">
+		<parameter name="Username" value="test@email.com"></parameter>
+		<parameter name="Password" value="12345"></parameter>
+		<classes>
+			<class name="tPOM_tests.Test1"></class>
+		</classes>
+	</test>
+	<test name="Test2-success login">
+		<parameter name="Username" value="test2@email.com"></parameter>
+		<parameter name="Password" value="12345"></parameter>
+		<classes>
+			<class name="tPOM_tests.Test1"></class>
+		</classes>
+	</test>
+		<test name="Test3- Unsuccess login">
+		<parameter name="Username" value="test22@email.com"></parameter>
+		<parameter name="Password" value="123245"></parameter>
+		<classes>
+			<class name="tPOM_tests.Test1"></class>
+		</classes>
+	</test>
+</suite>

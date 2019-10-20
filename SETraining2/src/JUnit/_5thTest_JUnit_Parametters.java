@@ -185,7 +185,7 @@ public class _5thTest_JUnit_Parametters {
 		case "id":
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(locatorPath))));
 		// driver.findElement(By.id(locatorPath));
-
+			
 		case "xpath":
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locatorPath))));
 
